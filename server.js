@@ -4,7 +4,7 @@ const app = require("./app");
 
 const { DB_HOST, PORT = 3000 } = process.env;
 
-//   "mongodb+srv://Sergey:seRUpLhCSgVQE3of@cluster0.bbbmgc6.mongodb.net/db-contacts?retryWrites=true&w=majority";
+
 mongoose
   .connect(DB_HOST)
   .then(() => {
