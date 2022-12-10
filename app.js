@@ -3,6 +3,10 @@ const logger = require("morgan");
 // const contacts = require(".//models/contacts");
 const contactsRouter = require("./routes/api/contacts");
 
+// const mongoose = require("mongoose");
+
+require("dotenv").config();
+
 const app = express();
 const cors = require("cors");
 const formatsLogger = app.get("env") === "development" ? "dev" : "short";
