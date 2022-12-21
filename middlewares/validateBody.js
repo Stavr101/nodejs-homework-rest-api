@@ -1,9 +1,12 @@
 const { HttpError } = require("../helpers");
-const { addSchema } = require("../schemas/contacts");
+// const schemas = require("../models/contact");
+// const Joi = require("Joi");
 
 const validateBody = (schema) => {
   const func = (req, res, next) => {
-    const { error } = addSchema.validate(req.body);
+    console.log(req.body);
+    const { error } = schema.validate(req.body);
+    console.log(error);
     if (error) {
       next(HttpError(400, error.message));
     }
