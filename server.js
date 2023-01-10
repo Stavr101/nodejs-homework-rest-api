@@ -20,7 +20,3 @@ mongoose
     console.log(error.message.red.bold);
     process.exit(1);
   });
-
-// ***
-
-// password - seRUpLhCSgVQE3of;
